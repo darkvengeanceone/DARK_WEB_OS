@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.phone-body {
+    background-color: rgb(62, 228, 173);
+    height: 23cm;
+    width: 13cm;
+    border-radius: 40px;
+}
+
+.phone-bezels {
+    background-color: rgb(0, 0, 0);
+    height: 22.7cm;
+    width: 12.7cm;
+    border-radius: 35px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.phone-screen {
+    height: 22.4cm;
+    width: 12.4cm;
+    border-radius: 30px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-image: url('wall-papper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-up {
+    border-radius: 30px;
+    height: 850px;
+    width: 470px;
+    position: relative;
+}
+
+.navbar button{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 40px;
+    top: 827px;
+    outline: none;
+    border: none;
+    left: 110px;
+}
+
+.applications {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.app-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.camera-icon {
+    position: relative;
+    top: 720px;
+}
+
+.phone-icon {
+    position: relative;
+    top: 720px;
+}
+
+.mail-icon  {
+    position: relative;
+    top: 720px;
+    left: 40px;
+}
+
+.insta-icon {
+    position: relative;
+    top: 400px;
+    left: 50px;
+}
+
+.setting-icon {
+    position: relative;
+    top: 500px;
+    right: 185px;
+}
+
+.image-icon {
+    position: relative;
+    top: 500px;
+    right: 60px;
+}
+
+.file-icon {
+    position: relative;
+    top: 415px;
+    left: -40px;
+}
+
+.icon {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.icon:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+}
+
+.app-icon span {
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    transition: opacity 0.8s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+.app-icon .expanded {
+    background-color: black;
+    height: 22.5cm;
+    width: 12.5cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
