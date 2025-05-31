@@ -25,7 +25,7 @@ git clone https://github.com/darkvengeanceone/DARK_WEB_OS.git
 
 ## Version
 
-- **1.0.0.1** – Initial release with GUI support only
+- **1.0.0.1** – Home screen customizable
 
 ## License
 
