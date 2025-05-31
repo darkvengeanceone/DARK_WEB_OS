@@ -6,6 +6,8 @@
 
 For future updates and additional features, please visit [here](https://darkvengeanceone.com/webos/index.html).
 
+If you want to visit as a website [here](https://darkvengeanceone.com/web-os/).
+
 ## Installation
 
 To clone the project locally, use the following command:
@@ -19,10 +21,11 @@ git clone https://github.com/darkvengeanceone/DARK_WEB_OS.git
 - Basic graphical interface
 - Modular design for future expansion
 - Developer-focused architecture
+- Home screen customizable
 
 ## Version
 
-- **1.0.0.0** – Initial release with GUI support only
+- **1.0.0.1** – Initial release with GUI support only
 
 ## License
 
