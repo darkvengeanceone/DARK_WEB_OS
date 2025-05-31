@@ -2,42 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WEB DARKOS | DARKVENGEANCEONE </title>
-    <!-- my css files -->
-    <link rel="stylesheet" href="main.css">
-    <!-- fontawesome css file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB DARKOS | DARKVENGEANCEONE</title>
+    <link rel="icon" type="image/png" href="darkvengeaDA.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
 
+    <div class="phone-location">
         <div class="phone-body">
             <div class="phone-bezels">
                 <div class="phone-screen">
                     <div class="home-up">
 
+                        <!-- nagivation button  -->
                         <div class="navbar">
-                            <button onclick="backmenu()"></button>
-                            <button onclick="home()"></button>
-                            <button onclick="backbutton()"></button>
+
+                            <button onclick="backbutton()">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+
+                            <button onclick="home()">
+                                <i class="fa-solid fa-square"></i>
+                            </button>
+
+                            <button onclick="backmenu()">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
                         </div>
 
+
+
+                        <!-- application icons -->
                         <div class="applications">
 
-                            <div class="insta-icon">
+
+                            <div class="app-screen" id="app-screen">
+                                <h2>Uygulama Açıldı</h2>
+                            </div>
+
+
+
+
+                            <div class="insta-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-brands fa-square-instagram"></i>
                                     </button>
-                                    <span>
-                                        İNSTAGRAM
-                                    </span>
+                                    <span>İNSTAGRAM</span>
                                 </div>
                             </div>
 
-                            <div class="phone-icon">
+                            <div class="phone-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-phone"></i>
@@ -45,7 +64,7 @@
                                 </div>
                             </div>
 
-                            <div class="mail-icon">
+                            <div class="mail-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-envelope"></i>
@@ -53,18 +72,16 @@
                                 </div>
                             </div>
 
-                            <div class="setting-icon">
+                            <div class="setting-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-gear"></i>
                                     </button>
-                                    <span>
-                                        SETTİNG
-                                    </span>
+                                    <span>SETTİNG</span>
                                 </div>
                             </div>
 
-                            <div class="camera-icon">
+                            <div class="camera-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-camera"></i>
@@ -72,34 +89,56 @@
                                 </div>
                             </div>
 
-                            <div class="image-icon">
+                            <div class="image-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-image"></i>
                                     </button>
-                                    <span>
-                                        GALLERY
-                                    </span>
+                                    <span>GALLERY</span>
                                 </div>
                             </div>
 
-                            <div class="file-icon">
+                            <div class="file-icon" onclick="toggleSize(event)">
                                 <div class="app-icon">
                                     <button class="icon">
                                         <i class="fa-solid fa-box-archive"></i>
                                     </button>
-                                    <span>
-                                        FİLE MANAGER
-                                    </span>
+                                    <span>FİLE MANAGER</span>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
+
+    <!-- phone home screen control  -->
+
+    <div class="home-screen-control-panel">
+        <div class="home-screen-icon-background-color">
+            <input type="color" name="color" id="icon-background-color">
+            <span>
+                İcon Background Color Select
+            </span>
+        </div>
+
+        <div class="home-screen-icon-color">
+            <input type="color" name="color" id="icon-color">
+            <span>
+                İcon Color Select
+            </span>
+        </div>
+
+        <div class="home-screen-app-span-control">
+            <input type="checkbox" name="checkbox" id="app-icon">
+            <span>
+                App text hidden
+            </span>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
