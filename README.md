@@ -4,10 +4,6 @@
 
 **DARKOS 1.0.0.0** is the first release and currently includes only a graphical user interface.
 
-For future updates and additional features, please visit [here](https://darkvengeanceone.com/webos/index.html).
-
-If you want to visit as a website [here](https://darkvengeanceone.com/web-os/).
-
 ## Installation
 
 To clone the project locally, use the following command:
